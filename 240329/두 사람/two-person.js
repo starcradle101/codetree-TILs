@@ -9,7 +9,7 @@ let ageA = Number(infoA[0]);
 let sexB = infoB[1].trim();
 let ageB = Number(infoB[0]);
 
-if ((ageA >= 19 || ageB >= 19) && (sexA === 'M' || sexB === 'M')) {
+if ((ageA >= 19 && sexA === 'M') || (ageB >= 19 || sexB === 'M')) {
     console.log(1);
 } else {
     console.log(0)
