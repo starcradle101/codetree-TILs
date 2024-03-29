@@ -10,7 +10,7 @@ let input = (fs.readFileSync(0).toString().split(' '));
 let midScore = Number(input[0])
 let finalScore = Number(input[1])
 
-if (midScore < 90 || midScore >= 90 && finalScore < 95) {
+if (midScore < 90 || midScore >= 90 && finalScore < 90) {
     console.log(0);
 } else if (midScore >= 90 && finalScore >= 95) {
     console.log(100000);
