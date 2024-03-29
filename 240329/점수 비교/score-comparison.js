@@ -6,7 +6,7 @@ let aEnglish = Number(input[0][1]);
 let bMath = Number(input[1][0]);
 let bEnglish = Number(input[1][1]);
 
-if (aEnglish > bEnglish && aMath > bMath) {
+if ( aMath > bMath && aEnglish > bEnglish) {
     console.log(1)
 } else {
     console.log(0)
