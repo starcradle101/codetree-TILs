@@ -5,4 +5,4 @@ let year = input[0];
 let month = input[1];
 let day = input[2];
 
-console.log(`${year}-${month}-${day}`);
+console.log(`${month}-${day}-${year}`);
