@@ -6,10 +6,10 @@ let b = Number(input[1]);
 let result1 = 0;
 let result2 = 0;
 
-if (a > b) {
-    result1 = 0
-} else {
+if (a < b) {
     result1 = 1
+} else {
+    result1 = 0
 }
 
 if (a === b) {
