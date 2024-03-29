@@ -12,5 +12,5 @@ let ageB = Number(infoB[1]);
 if ((ageA >= 19 || ageB >= 19) && (sexA === 'M' || sexB === 'M')) {
     console.log(1);
 } else {
-    console..log(0)
+    console.log(0)
 }
