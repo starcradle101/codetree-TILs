@@ -6,7 +6,7 @@ let [c, n] = [(input[0]), Number(input[1])];
 let result = '';
 
 if (c === 'A') {
-    for (let i = 0; i < n; i += 1) {
+    for (let i = 1; i <= n; i += 1) {
         result += i + ' ';
     }
 } else {
