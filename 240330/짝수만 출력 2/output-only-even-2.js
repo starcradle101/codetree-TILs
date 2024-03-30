@@ -4,7 +4,7 @@ let input = (fs.readFileSync(0).toString().split(' '));
 let [b, a] = [Number(input[0]), Number(input[1])]
 let result = '';
 
-while (b <= a) {
+while (b >= a) {
     result += b + ' '
     b -= 2
 }
