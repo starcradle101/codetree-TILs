@@ -4,7 +4,7 @@ let input = Number(fs.readFileSync(0).toString());
 let result = '';
 
 for (let i = input; i <= input * 5; i += input) {
-    result = i += ' ';
+    result += i + ' ';
 }
 
 console.log(result)
