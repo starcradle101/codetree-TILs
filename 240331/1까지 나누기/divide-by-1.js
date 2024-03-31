@@ -3,7 +3,7 @@ let input = Number((fs.readFileSync(0).toString()));
 
 let divider = 1;
 let quotient = parseInt(input / divider);
-let num = 1;
+let num = 0;
 
 while (true) {
     quotient = parseInt(quotient / divider)
