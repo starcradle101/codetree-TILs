@@ -19,7 +19,6 @@ if (n > 1) {
 }
 
 console.log(result)
-*       *
 // 거꾸로 내려가는 모양
 // n = 3
 // 1
