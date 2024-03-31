@@ -9,4 +9,4 @@ for (let i = 0; i < 5; i += 1) {
     }
 }
 
-console.log(flag ? 1 : 0);
+console.log(flag ? 0 : 1);
