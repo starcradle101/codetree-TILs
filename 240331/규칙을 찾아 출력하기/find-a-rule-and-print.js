@@ -10,7 +10,7 @@ result += '* '.repeat(n) + '\n';
 // 요 사이에 빈칸 채울 것
 if (n >= 3) {
     for (let i = 1; i < n - 1; i += 1) {
-        result += '* '.repeat(i) + '  '.repeat(n - i) + '*\n';
+        result += '* '.repeat(i) + '  '.repeat(n - 2 - (i - 1)) + ' *\n';
     }
 }
 
