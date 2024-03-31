@@ -14,6 +14,7 @@ for (let i = 0; i < n; i += 1) {
             cnt += 2;
         }
     }
+    if (i % 2 === 0 && i !== 0) cnt += 1;
     result += '\n';
 }
 
