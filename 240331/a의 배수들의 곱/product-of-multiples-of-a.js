@@ -10,4 +10,4 @@ for (let i = a; i <= b; i += 1) {
     }
 }
 
-console(prod)
+console.log(prod)
