@@ -1,0 +1,12 @@
+const fs = require('fs');
+let input = ((fs.readFileSync(0).toString().split('\n')));
+
+let result = '';
+
+for (let i = 1; i <= input[0]; i += 1) {
+    if (Number(input[i]) % 2 === 1 && Number(input[i]) % 3 === 0) {
+        result += input[i] + '\n'
+    }
+}
+
+console.log(result)
