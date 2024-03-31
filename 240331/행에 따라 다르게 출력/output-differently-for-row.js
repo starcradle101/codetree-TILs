@@ -1,21 +1,20 @@
 const fs = require('fs');
 let n = Number(fs.readFileSync(0).toString());
 
-let cnt = 1;
-let result = '';
+let num = 1;
+let line = '';
 
-for (let i = 0; i < n; i += 1) {
-    for (let j = 0; j < n; j += 1) {
+for (let i = 0; i < n; i++) {
+    
+    for (let j = 0; j < n; j++) {
+        line += num + ' ';
         if (i % 2 === 0) {
-            result += cnt + ' ';
-            cnt += 1;
+            (j === n - 1) ? num += 2 : num += 1;
         } else {
-            result += cnt + ' ';
-            cnt += 2;
+            (j === n - 1) ? num += 1 : num += 2;
         }
     }
-    if (i % 2 === 0 && i !== 0) cnt += 1;
-    result += '\n';
+    line += '\n';
 }
 
-console.log(result)
+console.log(line)
