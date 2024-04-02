@@ -7,6 +7,9 @@ let index = 'A'.charCodeAt();
 for (let i = 0; i < n; i += 1) {
         result += '  '.repeat(i);
     for (let j = i; j < n; j += 1) {
+        if (index === 90) {
+            index = 'A'.charCodeAt();
+        }
         result += String.fromCharCode(index) + ' ';
         index += 1;
     }
