@@ -1,5 +1,5 @@
 const fs = require("fs");
-let n = fs.readFileSync(0).toString().trim();
+let n = Number(fs.readFileSync(0).toString().trim());
 let result = '';
 let index = 'A'.charCodeAt();
 
