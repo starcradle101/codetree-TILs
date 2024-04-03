@@ -1,5 +1,5 @@
 const fs = require('fs');
-let arr = fs.readFileSync(0).toString().trim().split(' ').map(Number);
+let arr = fs.readFileSync(0).toString().trim().split(' ');
 
 let answer = arr.reverse().join('');
 
