@@ -6,4 +6,4 @@ for (let el of input) {
     sum += el;
 }
 
-console.log(el)
+console.log(sum)
