@@ -5,7 +5,7 @@ let cnt = 0;
 let arr = [];
 let startingValue = n;
 
-while (cnt < 3) {
+while (cnt < 2) {
     if (startingValue % 5 === 0) cnt += 1;
     arr.push(startingValue);
     startingValue += n;
