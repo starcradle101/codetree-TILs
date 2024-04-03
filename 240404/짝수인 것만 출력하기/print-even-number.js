@@ -12,6 +12,5 @@ for (let i = 0; i < n; i += 1) {
   }
 }
 
-let str = answer.join(' ');
 
-console.log(str)
+console.log(answer)
