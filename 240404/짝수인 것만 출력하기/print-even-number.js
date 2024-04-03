@@ -8,9 +8,10 @@ let answer = [];
 
 for (let i = 0; i < n; i += 1) {
   if (arr[i] % 2 === 0) {
-    answer += arr[i];
+    answer.push(arr[i])
   }
 }
 
+answer.join(' ');
 
 console.log(answer)
