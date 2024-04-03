@@ -8,6 +8,6 @@ for (let score of el) {
     sum += score;
 }
 
-let avg = (score / n).toFixed(1);
+let avg = (sum / n).toFixed(1);
 
 console.log(avg)
