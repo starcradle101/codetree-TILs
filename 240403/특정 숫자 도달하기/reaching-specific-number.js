@@ -16,7 +16,7 @@ for (let el of filteredArr) {
     sum += el;
 }
 
-let avg = (sum / filteredArr.length).toFixed(1);
+avg = (sum / filteredArr.length).toFixed(1);
 
 console.log(sum, avg)
 
