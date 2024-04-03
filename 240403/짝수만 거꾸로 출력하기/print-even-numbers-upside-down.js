@@ -1,7 +1,6 @@
 const fs = require('fs');
 let input = fs.readFileSync(0).toString().trim().split("\n");
 
-let n = Number(input[0]);
 let numbers = input[1].split(' ').map(Number);
 
 let arr = [];
@@ -12,7 +11,9 @@ for (let el of numbers) {
     }
 }
 
-console.log(arr);
+const answer = arr.join(' ');
+
+console.log(answer);
 
 
 // 짝수만 출력하기
