@@ -9,7 +9,7 @@ for (let i = 0; i < input.length; i += 1) {
 }
 
 for (let j = 0; j < arr.length; j += 1) {
-    if (arr[j] % 2 === 0) {
+    if (arr[j] % 2 === 1) {
         arr[j] = arr[j] + 3;
     } else {
         arr[j] = parseInt(arr[j] / 2);
