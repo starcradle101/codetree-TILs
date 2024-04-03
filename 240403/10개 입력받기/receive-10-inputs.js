@@ -1,7 +1,6 @@
 const fs = require('fs');
 let input = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 
-let answer = Array(10);
 let sum = 0, cnt = 0;
 
 for (let el of input) {
