@@ -4,7 +4,7 @@ let input = fs.readFileSync(0).toString().trim().split(" ").map(Number);
 let n = input.length;
 let sum = 0;
 
-for (let score of el) {
+for (let score of input) {
     sum += score;
 }
 
