@@ -11,6 +11,7 @@ for (let score of scores) {
 }
 
 avg = (sum / (scores.length)).toFixed(1);
+console.log(avg)
 
 if (avg >= 4.0) {
     console.log('Perfect');
