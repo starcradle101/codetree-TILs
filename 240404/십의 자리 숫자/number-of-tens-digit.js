@@ -20,9 +20,8 @@ for (let num of arrBefore0) {
 	}
 }
 
-console.log(arrDigit);
 
-for (let j = 1; j <= arrBefore0.length; j += 1) {
+for (let j = 1; j <= arrDigit.length; j += 1) {
 	result += `${j} - ${arrDigit[j]}\n`;
 }
 
