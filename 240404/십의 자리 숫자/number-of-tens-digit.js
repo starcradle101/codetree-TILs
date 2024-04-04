@@ -21,7 +21,7 @@ for (let num of arrBefore0) {
 }
 
 
-for (let j = 1; j <= 10; j += 1) {
+for (let j = 1; j < 9; j += 1) {
 	result += `${j} - ${arrDigit[j]}\n`;
 }
 
