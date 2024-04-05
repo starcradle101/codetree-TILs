@@ -5,7 +5,7 @@ let a = input[0];
 let b = input[1];
 let remainderArray = Array(b).fill(0);
 
-while (a > 1) {
+while (a >= 1) {
 	a = parseInt(a / b);
 	let remainder = a % b;
 	remainderArray[remainder] += 1;
