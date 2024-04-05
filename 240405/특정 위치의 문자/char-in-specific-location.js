@@ -1,5 +1,5 @@
 const fs = require('fs');
-let input = fs.readFileSync(0).toString();
+let input = fs.readFileSync(0).toString().trim();
 
 const word = ['L', 'E', 'B', 'R', 'O', 'S'];
 
