@@ -15,4 +15,4 @@ for (let i = 0; i < length; i += 1) {
 }
 
 
-console.log(i + 1);
+console.log(idx + 1);
