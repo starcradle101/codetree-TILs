@@ -19,8 +19,6 @@ for (let i = 0; i < sequenceALength; i += 1) {
         if (cnt === sequenceB.length) {
             flag = true;
             break;
-        } else {
-            continue;
         }
     }
 }
