@@ -15,9 +15,8 @@ let sequenceB = input[2].split(' ').map(Number);
 let flag = false;
 
 for (let i = 0; i < sequenceALength; i += 1) {
-    if (sequenceA[i] === sequenceB[i]) {
+    if (sequenceA[i] === sequenceB[0]) {
         for (let j = 0; j < sequenceBLength; j += 1) {
-            console.log(sequenceA[i + j], sequenceB[j])
             if (sequenceA[i + j] === sequenceB[j]) {
                 flag = true;
             } else {
@@ -25,7 +24,10 @@ for (let i = 0; i < sequenceALength; i += 1) {
                 break;
             }
         }
+        break;
     }
 }
+
+// 바깥 for문은 다 돌지 않고 나가야 함. 언제? 모든 비교가 끝났을 때
 
 console.log(flag ? 'Yes': 'No');
