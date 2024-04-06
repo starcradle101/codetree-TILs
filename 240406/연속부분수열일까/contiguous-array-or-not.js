@@ -17,6 +17,7 @@ let flag = false;
 for (let i = 0; i < sequenceALength; i += 1) {
     if (sequenceA[i] === sequenceB[i]) {
         for (let j = 0; j < sequenceBLength; j += 1) {
+            console.log(sequenceA[i + j], sequenceB[j])
             if (sequenceA[i + j] === sequenceB[j]) {
                 flag = true;
             } else {
