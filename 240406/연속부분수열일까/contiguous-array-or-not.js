@@ -21,6 +21,7 @@ for (let i = 0; i < sequenceALength; i += 1) {
             if (sequenceA[i + j] === sequenceB[j]) {
                 cnt += 1;
             }
+            
         }
         if (cnt === sequenceB.length) {
             flag = true;
