@@ -1,5 +1,5 @@
 const fs = require('fs');
-let input = fs.readFileSync(0).toString().split('\n').trim();
+let input = fs.readFileSync(0).toString().trim().split('\n');
 
 let [sequenceALength, sequenceBLength] = input[0].split(' ').map(Number);
 let sequenceA = input[1].split(' ').map(Number);
