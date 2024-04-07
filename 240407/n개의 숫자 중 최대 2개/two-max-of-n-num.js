@@ -2,7 +2,7 @@ const fs = require('fs');
 let input = fs.readFileSync(0).toString().split('\n');
 
 let length = Number(input[0]);
-let arr = input[1].split(' ').map(Number);
+let arr = input[1].trim().split(' ').map(Number);
 
 // 가장 큰 수와 두 번째로 큰 수
 
