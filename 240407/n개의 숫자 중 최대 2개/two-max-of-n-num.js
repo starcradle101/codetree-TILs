@@ -12,5 +12,4 @@ let arr = input[1].split(' ').map(Number);
 // 배열에서 하나씩 내보내자
 
 arr.sort((a, b) => b - a);
-console.log(arr)
 console.log(arr[0], arr[1]);
