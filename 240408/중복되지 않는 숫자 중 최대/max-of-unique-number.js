@@ -7,7 +7,7 @@ let max = 0;
 let duplicateArr = [];
 
 for (let i = 0; i < length; i += 1) {
-    if(length === 1) max = arr[i];
+    if(length === 1) max = arr[0];
 
 
     if (duplicateArr.includes(arr[i])) {
