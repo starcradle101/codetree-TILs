@@ -15,6 +15,7 @@ for (let i = 0; i < length; i += 1) {
 
     if (arr[i] === arr[i + 1]) {
         duplicateArr.push(arr[i]);
+        continue;
     }
 
     if (arr[i] > max) {
