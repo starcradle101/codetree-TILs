@@ -2,23 +2,23 @@ const fs = require('fs');
 let input = fs.readFileSync(0).toString().split('\n');
 
 let length = Number(input[0]);
-let arr = input[1].split(' ').map(Number).sort((a, b) => a - b);
-let max = -1;
-let duplicateArr = [];
+let arr = input[1].split(' ').map(Number);
 
-for (let i = 0; i < length; i += 1) {
-    if (duplicateArr.includes(arr[i])) {
-        continue;
-    }
+let countMap = {};
 
-    if (length > 1 && arr[i] === arr[i + 1]) {
-        duplicateArr.push(arr[i]);
-        continue;
-    }
-
-    if (arr[i] > max) {
-        max = arr[i];
+for (let i = 0; i < length; i++) {
+    if (countMap[arr[i]]) {
+        countMap[arr[i]] += 1;
+    } else {
+        countMap[arr[i]] = 1;
     }
 }
 
-console.log((max === arr[0]) ? -1 : max);
+let maxNonDuplicate = -1;
+for (let key in countMap) {
+    if (countMap[key] === 1 && Number(key) > maxNonDuplicate) {
+        maxNonDuplicate = Number(key);
+    }
+}
+
+console.log(maxNonDuplicate);
