@@ -3,10 +3,12 @@ let input = fs.readFileSync(0).toString().split('\n');
 
 let length = Number(input[0]);
 let arr = input[1].split(' ').map(Number).sort((a,b)=> a - b);
-let max = arr[0];
+let max = 0;
 let duplicateArr = [];
 
 for (let i = 0; i < length; i += 1) {
+    if(length === 1) max = arr[0];
+
 
     if (duplicateArr.includes(arr[i])) {
         continue;
