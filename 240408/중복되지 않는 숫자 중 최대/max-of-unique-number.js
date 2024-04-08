@@ -6,7 +6,7 @@ let arr = input[1].split(' ').map(Number).sort((a,b)=> a - b);
 let max = 0;
 let duplicateArr = [];
 
-console.log(arr)
+console.log(duplicateArr)
 
 for (let i = 0; i < length; i += 1) {
     if (arr[i] in duplicateArr) {
