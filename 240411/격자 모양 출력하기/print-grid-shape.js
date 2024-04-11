@@ -9,7 +9,9 @@ let arr2d = Array(size)
 
 for (let i = 0; i < pointNum; i += 1) {
     let coordinate = points[i];
-    arr2d[coordinate[0] - 1][coordinate[1] - 1] = (i + 1) * (j + 1);
+    let x = coordinate[0] - 1;
+    let y = coordinate[1] - 1;
+    arr2d[x][y] = (x + 1) * (y + 1);
 }
 
 for (let i = 0; i < size; i += 1) {
