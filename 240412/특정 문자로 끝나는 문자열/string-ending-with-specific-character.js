@@ -6,6 +6,7 @@ const queryChar = input[11];
 
 for (let i = 0; i < words.length; i += 1) {
     let endOfWord = words[i][words[i].length - 1];
+    console.log(endOfWord)
     if (endOfWord === queryChar) {
         console.log(words[i]);
     }
