@@ -6,7 +6,7 @@ let sliceIndex = Number(input[1]);
 let result = '';
 
 for (let i = sliceIndex - 1; i>= sliceIndex - word.length; i-=1) {
-    result += (word[sliceIndex[i]]);
+    result += (word[i]);
 }
 
 console.log(result);
