@@ -5,7 +5,7 @@ let word = input[0];
 let sliceIndex = Number(input[1]);
 let result = '';
 
-for (let i = word.length - 1; i>= word.length - sliceIndex - 1; i-=1) {
+for (let i = word.length - 1; i>= word.length - sliceIndex; i-=1) {
     result += (word[i]);
 }
 
