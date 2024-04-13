@@ -6,7 +6,7 @@ let sliceIndex = Number(input[1]);
 let result = '';
 
 if (sliceIndex > word.length) {
-    console.log(word);
+    console.log(word.reverse());
 } else {
     for (let i = word.length - 1; i>= word.length - sliceIndex; i-=1) {
         result += (word[i]);
