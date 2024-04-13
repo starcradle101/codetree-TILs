@@ -8,10 +8,10 @@ let result = '';
 if (sliceIndex > word.length) {
     console.log(word);
 } else {
-for (let i = word.length - 1; i>= word.length - sliceIndex; i-=1) {
-    result += (word[i]);
-}
-console.log(result);
+    for (let i = word.length - 1; i>= word.length - sliceIndex; i-=1) {
+        result += (word[i]);
+    }
+    console.log(result);
 }
 
 // 맨 뒤에서부터 (word.length)
