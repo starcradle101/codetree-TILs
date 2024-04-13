@@ -12,4 +12,4 @@ for (let i = 0; i < word.lenth; i += 1) {
     }
 }
 
-console.log(compressedString);
+console.log(`${compressedString.length}\n${compressedString}`);
