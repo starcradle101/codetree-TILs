@@ -6,8 +6,8 @@ let sliceIndex = Number(input[1]);
 let result = '';
 
 if (sliceIndex > word.length) {
-    for (let i = 0; i < word.length; i += 1) {
-        result += word[i];
+    for (let i = word.length - 1; i>= 0; i-=1) {
+        result += (word[i]);
     }
 } else {
     for (let i = word.length - 1; i>= word.length - sliceIndex; i-=1) {
