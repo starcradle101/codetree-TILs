@@ -12,6 +12,6 @@ for (let i = 0; i < numbers.length; i += 1) {
         result = '';
     }
 }
-
-// 5개씩 끊어서 출력하기
-// 순회를 어떻게...?
+if (result.length !== 0) {
+    console.log(result);
+}
