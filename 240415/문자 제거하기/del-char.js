@@ -7,7 +7,7 @@ let indexes = input.slice(1).map(Number);
 
     for(let index of indexes) {
         if (wordLength < 1) break;
-        if (index > wordLength) {
+        if (index >= wordLength) {
             word.splice(wordLength - 1, 1);
         } else {
             word.splice(index, 1);
