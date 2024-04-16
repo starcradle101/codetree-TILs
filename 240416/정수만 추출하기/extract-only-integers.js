@@ -5,8 +5,9 @@ let sum = 0;
 
 for (let el of input) {
     let currentNum = '';
-    if (el == Number(el)) {
-        currentNum += el;
+    for (let i = 0; i < el.length; i += 1) {
+        if (el[i] != Number(el[i])) break;
+        currentNum += el[i];
     }
     sum += Number(currentNum);
 }
