@@ -4,7 +4,7 @@ let count = 0;
 let record = '';
 
 for (let i = 0; i < input.length; i += 1) {
-    if (input[i] === 0) break;
+    if (input[i] == 0) break;
     if (i % 2 === 0) {
         record += input[i] + '\n';
     }
