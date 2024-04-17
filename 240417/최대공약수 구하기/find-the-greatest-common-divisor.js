@@ -31,6 +31,7 @@ const getGCD = (n, m) => {
             n = remainder;
             remainder = m % n;
         }
+        gcd = n;
     }
     console.log(gCD);
 }
