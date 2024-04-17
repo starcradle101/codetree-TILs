@@ -17,8 +17,8 @@ let count = 1;
 const printSquare = (n) => {
     for (let i = 0; i < n; i += 1) {
         for (let j = 0; j < n; j += 1) {
-            if (count === 9) count = 1;
-            console.log(`${count}` );
+            if (count > 9) count = 1;
+            process.stdout.write(`${count} `);
             count += 1;
         }
         process.stdout.write('\n');
