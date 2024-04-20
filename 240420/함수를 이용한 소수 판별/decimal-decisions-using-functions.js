@@ -7,6 +7,7 @@ let [a, b] = input;
 
 // 소수의 합 구하는 함수
 function getPrimeSum(a, b) {
+    if (a === 1 && b === 1) return 0;
     let primeSum = 0;
  for (let i = a; i <= b; i += 1) {
     if (findPrime(i)) primeSum += i;
@@ -24,3 +25,5 @@ function findPrime(n) {
 
 let result = getPrimeSum(a, b);
 console.log(result)
+
+// 1부터 확인하도록 수정하자.
