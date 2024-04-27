@@ -2,48 +2,39 @@ const fs = require('fs');
 let input = fs.readFileSync(0).toString().trim().split(' ').map(Number);
 
 function isLeapYear(year) {
-  if (year % 4 === 0) {
-    if (year % 100 === 0) {
-      return year % 400 === 0;
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            return year % 400 === 0;
+        }
+        return true;
     }
-    return true;
-  }
-  return false;
+    return false;
 }
 
 function getSeason(year, month, day) {
-  // 입력받은 날짜가 존재하는지 확인
-  if (month < 1 || month > 12 || day < 1 || day > 31) {
-    return -1;
-  }
+    const seasons = ["Winter", "Spring", "Summer", "Fall"];
+    const monthSeasons = [3, 6, 9, 12];
+    const isLeap = isLeapYear(year);
+    let season = -1;
 
-  // 윤년 여부 판단
-  const isLeap = isLeapYear(year);
-
-  // 2월의 경우 윤년 여부에 따라 일수 조정
-  if (month === 2) {
-    if (isLeap) {
-      if (day > 29) {
-        return -1;
-      }
-    } else {
-      if (day > 28) {
-        return -1;
-      }
+    for (let i = 0; i < monthSeasons.length; i++) {
+        if (month <= monthSeasons[i]) {
+            season = i;
+            break;
+        }
     }
-  }
 
-  // 계절 판단
-  if (month >= 3 && month <= 5) {
-    return "Spring";
-  } else if (month >= 6 && month <= 8) {
-    return "Summer";
-  } else if (month >= 9 && month <= 11) {
-    return "Fall";
-  } else {
-    return "Winter";
-  }
+    if (month === 2 && day === 29 && !isLeap) {
+        return -1; // 윤년이 아닌데 2월 29일이면 존재하지 않는 날짜
+    }
+
+    if (month !== 2 && day > 30) {
+        return -1; // 4, 6, 9, 11월은 30일까지만 있음
+    }
+
+    return season === -1 ? -1 : seasons[season];
 }
+
 
 let result = getSeason(...input)
 console.log(result)
