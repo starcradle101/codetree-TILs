@@ -18,6 +18,7 @@ function isCorrectDate(month, day) {
         30, // November
         31  // December
     ];
+    if (month > daysPerMonth.length) return 'No';
     if (daysPerMonth[month - 1] < day) return 'No';
 
     return 'Yes';
