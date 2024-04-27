@@ -17,7 +17,7 @@ function isConsecutiveNumberSubSequence(seriesA, seriesB, sizeA, sizeB) {
 
     for (let i = 0; i < sizeA; i += 1) {
         if (seriesA[i] === seriesB[0]) {
-            if (sizeA - seriesA[i] - 1 === sizeB) {
+            if (sizeA - seriesA[i] - 1 < sizeB) {
                 break;
             } else {
                 let index = seriesA[i]
