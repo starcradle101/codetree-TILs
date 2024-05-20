@@ -1,15 +1,21 @@
 const fs = require('fs');
-const [a, b] = fs.readFileSync(0).toString().trim().split(' ').map(Number);
+const arr = fs.readFileSync(0).toString().trim().split(' ').map(Number);
 
 // 큰 수 + 25, 작은 수 * 2
 
-function mutate(a, b) {
-    const bigger = Math.max(a, b);
-    const smaller = Math.min(a, b);
+function mutate(arr) {
+    let [a, b] = arr;
+    if ( a > b) {
+        a += 25;
+        b *= 2;
+    } else {
+        a *= 2;
+        b += 25;
+    }
 
-    return [bigger + 25, smaller * 2];
+    return [a, b];
 }
 
-let result = mutate(a, b).join(' ');
+let result = mutate(arr).join(' ');
 
 console.log(result)
