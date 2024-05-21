@@ -11,7 +11,7 @@ const mutate = (arr) => {
         b *= 2;
     }
 
-    return [a ,b];
+    return [a ,b].join(' ');
 }
 
 console.log(mutate(input));
