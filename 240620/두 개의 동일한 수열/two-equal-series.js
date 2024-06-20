@@ -4,16 +4,17 @@ const arr1 = input[1].split(' ').map(Number);
 const arr2 = input[2].split(' ').map(Number);
 
 const hasSameElements = (arr1, arr2) => {
+    let flag = false;
     const sortedArr1 = arr1.sort((a, b) => a - b);
     const sortedArr2 = arr2.sort((a, b) => a - b);
 
     for (let i = 0; i < sortedArr1.length; i += 1) {
         if (sortedArr1[i] !== sortedArr2[i]) {
-            return 'No';
+            return flag;
         }
     }
 
-    return 'Yes';
+    return !flag;
 }
 
-console.log(hasSameElements(arr1, arr2));
+console.log(hasSameElements(arr1, arr2) ? 'Yes' : 'No');
