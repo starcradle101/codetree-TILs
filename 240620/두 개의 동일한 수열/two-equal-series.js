@@ -4,7 +4,7 @@ const arr1 = input[1].split(' ').map(Number);
 const arr2 = input[2].split(' ').map(Number);
 
 const hasSameElements = (arr1, arr2) => {
-    const sortedArr1 = arr1.sort((a,b) => a - b);
+    const sortedArr1 = arr1.sort((a, b) => a - b);
     const sortedArr2 = arr2.sort((a, b) => a - b);
 
     for (let i = 0; i < sortedArr1.length; i += 1) {
