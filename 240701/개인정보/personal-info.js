@@ -15,8 +15,9 @@ let people = [];
 
 for (let person of input) {
     const [name, height, weight] = person.split(' ');
-    people.push(new HealthData(name, Number(height), parseFloat(weight)));
+    people.push(new HealthData(name, Number(height), parseFloat(weight).toFixed(1)));
 }
+
 
 console.log('name');
 people.sort((a, b) => {
