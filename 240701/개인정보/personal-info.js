@@ -15,7 +15,7 @@ let people = [];
 
 for (let person of input) {
     const [name, height, weight] = person.split(' ');
-    people.push(new HealthData(name, Number(height), Number(weight)));
+    people.push(new HealthData(name, Number(height), parseFloat(weight)));
 }
 
 console.log('name');
