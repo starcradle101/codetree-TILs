@@ -5,7 +5,7 @@ const getTimeInterval = (a, b, c, d) => {
     const minutesA = a * 60 + b;
     const minutesB = c * 60 + d;
 
-    return minutesA - minutesB;
+    return minutesB - minutesA;
 }
 
 console.log(getTimeInterval(a, b, c, d));
