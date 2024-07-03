@@ -3,7 +3,7 @@ const [m1, d1, m2, d2] = fs.readFileSync(0).toString().trim().split(' ').map(Num
 
 const getDays = (m, d) => {
     const num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    let days = 1;
+    let days = 0;
     
     for (let i = 1; i < m; i += 1) {
         days += num_of_days[i];
@@ -17,7 +17,7 @@ const getDateInterval = (m1, d1, m2, d2) => {
     const daysA = getDays(m1, d1);
     const daysB = getDays(m2, d2);
 
-    return daysB - daysA;
+    return daysB - daysA + 1;
 }
 
 console.log(getDateInterval(m1, d1, m2, d2));
