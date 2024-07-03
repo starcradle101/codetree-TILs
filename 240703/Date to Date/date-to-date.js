@@ -3,7 +3,7 @@ const [m1, d1, m2, d2] = fs.readFileSync(0).toString().trim().split(' ').map(Num
 
 const getDays = (m, d) => {
     const num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    let days = 0;
+    let days = 1;
     
     for (let i = 1; i < m; i += 1) {
         days += num_of_days[i];
