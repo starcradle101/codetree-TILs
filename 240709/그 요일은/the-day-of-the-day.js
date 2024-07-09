@@ -23,7 +23,7 @@ function numOfDays(m, d) {
     return totalDays;
 }
 
-let diff = numOfDays(m2, d2) - numOfDays(m1, d1) + 1;
+let diff = numOfDays(m2, d2) - numOfDays(m1, d1);
 
 
 let count = parseInt(diff / 7) + ((dayOfWeek.indexOf(day + 1) > diff % 7) ? 0 : 1);
