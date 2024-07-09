@@ -2,7 +2,7 @@ const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim().split('\n');
 
 // 변수 선언 및 입력
-const dayOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const [m1, d1, m2, d2] = input[0].split(' ').map(Number);
 const day = input[1];
 
@@ -23,9 +23,9 @@ function numOfDays(m, d) {
     return totalDays;
 }
 
-let diff = numOfDays(m2, d2) - numOfDays(m1, d1);
+let diff = numOfDays(m2, d2) - numOfDays(m1, d1) + 1;
 
 
-let count = parseInt(diff / 7) + ((dayOfWeek.indexOf(day + 1) > diff % 7) ? 0 : 1);
+let count = Math.floor(diff / 7) + (diff % 7 < days.indexOf(day) + 1 ? 0 : 1 );
 
 console.log(count);
