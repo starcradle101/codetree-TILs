@@ -30,6 +30,7 @@ const getDate = (m1, d1, m2, d2) => {
 
 const getIndex = (totalDays, isNegative) => {
     const index = isNegative ?  dates.length + -1 * (totalDays % 7) : dates.length + totalDays % 7;
+    console.log(index)
     return dates[index];
 }
 
