@@ -13,6 +13,7 @@ while(true) {
 
     binaryDigits.unshift(n % 2);
     n = Math.floor(n / 2);
+    console.log(n);
 }
 
 console.log(+binaryDigits.join(''));
