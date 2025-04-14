@@ -10,17 +10,16 @@ let corridor_cnt = 0;
 let toilet_cnt = 0;
 
 for(let i = 0; i <= input; i+= 1) {
-    switch(i) {
-        case(i % 12 === 0):
-            toilet_cnt += 1;
-            break;
-        case(i % 3 === 0):
-            corridor_cnt += 1;
-            break;
-        case(i % 2 === 0):
-            classroom_cnt += 1;
-            break;
-    }
+    if (i % 12 === 0) {
+    toilet_cnt++;
+    break;
+  } else if (i % 3 === 0) {
+    corridor_cnt++;
+    break;
+  } else if (i % 2 === 0) {
+    classroom_cnt++;
+    break;
+  }
 }
 
 console.log(classroom_cnt, corridor_cnt, toilet_cnt);
