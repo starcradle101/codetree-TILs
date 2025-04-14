@@ -1,4 +1,2 @@
-console.log(`
-Hello students!
-Welcome to LeebrosCode!
-`)
+console.log(`Hello students!
+Welcome to LeebrosCode!`)
