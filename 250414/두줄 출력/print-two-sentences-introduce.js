@@ -1,4 +1,4 @@
 console.log(`
 Hello students!
-Welcome to LeebresCode!
+Welcome to LeebrosCode!
 `)
