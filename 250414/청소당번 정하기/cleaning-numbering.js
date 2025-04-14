@@ -9,15 +9,15 @@ let classroom_cnt = 0;
 let corridor_cnt = 0;
 let toilet_cnt = 0;
 
-for(let day of input) {
-    switch(day) {
-        case(day % 12 === 0):
+for(let i = 0; i <= input; i+= 1) {
+    switch(i) {
+        case(i % 12 === 0):
             toilet_cnt += 1;
             break;
-        case(day % 3 === 0):
+        case(i % 3 === 0):
             corridor_cnt += 1;
             break;
-        case(day % 2 === 0):
+        case(i % 2 === 0):
             classroom_cnt += 1;
             break;
     }
