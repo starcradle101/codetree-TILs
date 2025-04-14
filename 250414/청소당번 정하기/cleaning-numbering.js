@@ -12,13 +12,13 @@ let toilet_cnt = 0;
 for(let i = 0; i <= input; i+= 1) {
     if (i % 12 === 0) {
     toilet_cnt++;
-    break;
+    continue;
   } else if (i % 3 === 0) {
     corridor_cnt++;
-    break;
+    continue;
   } else if (i % 2 === 0) {
     classroom_cnt++;
-    break;
+    continue;
   }
 }
 
