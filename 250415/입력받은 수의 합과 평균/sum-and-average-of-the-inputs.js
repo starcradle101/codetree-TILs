@@ -5,7 +5,7 @@ let sum = 0;
 const cnt = input.length;
 
 for(let num of input) {
-    sum += input;
+    sum += num;
 }
 
 const avg = (sum / cnt).toFixed(1);
