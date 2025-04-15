@@ -1,5 +1,5 @@
 const fs = require("fs");
-let input = fs.readFileSync(0).toString().trim().split('\n').map(Number);
+let input = fs.readFileSync(0).toString().trim().split('\n');
 
 let idx = 0;
 
