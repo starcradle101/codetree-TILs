@@ -5,7 +5,7 @@ let idx = 0;
 
 while(true) {
     const line = input[idx].split(' ');
-    const [width, height] = line.splice(0, 2).map(Number);
+    const [width, height] = line.slice(0, 2).map(Number);
     const area = width * height;
     
     console.log(area);
