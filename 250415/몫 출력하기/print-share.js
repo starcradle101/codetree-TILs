@@ -7,9 +7,11 @@ while(true) {
     if(idx > 2) break;
 
     if(arr[idx] % 2 === 1) {
+        idx += 1;
         continue;
     } else {
         console.log(parseInt(arr[idx] / 2));
+        idx += 1;
     }
 }
 
