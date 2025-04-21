@@ -9,8 +9,8 @@ const line = new Array(201).fill(0);
 const start = 100;
 
 for(let command of commands) {
-    const x = Number(command[0]);
-    const direction = command[2];
+    let [x, direction] = command.split(' ');
+    x = Number(x);
 
     if(direction === 'L') {
         for(let i = start; i <= start + x; i += 1) {
