@@ -6,7 +6,7 @@ const commands = input.slice(1, n + 1);
 let answer = 0;
 
 const line = new Array(201).fill(0);
-const start = 100;
+let start = 100;
 
 for(let command of commands) {
     let [x, direction] = command.split(' ');
@@ -16,10 +16,12 @@ for(let command of commands) {
         for(let i = start; i <= start + x; i += 1) {
             line[i] += 1;
         }
+        start -= x;
     } else {
         for(let i = start + x; i >= start; i -= 1) {
             line[i] += 1;
         }
+        start += x;
     }
 }
 
